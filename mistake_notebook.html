@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颜昔酒的错题本</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        header {
+            background-color: #4285f4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .student-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .questions-container {
+            padding: 20px;
+        }
+        .question-card {
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .question-header {
+            background-color: #f5f9ff;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .question-body {
+            padding: 15px;
+        }
+        .question-content, .answer-content {
+            margin-bottom: 15px;
+        }
+        .image-container {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+        .error-reason {
+            background-color: #ffebee;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .knowledge-points {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        .knowledge-tag {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #757575;
+            font-size: 0.9em;
+            border-top: 1px solid #e0e0e0;
+        }
+        .review-info {
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+            color: #757575;
+        }
+        .review-badge {
+            background-color: #ff5722;
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 0.8em;
+        }
+        .exam-info {
+            color: #555;
+            font-size: 0.9em;
+        }
+        .tabs {
+            display: flex;
+            background-color: #f1f8ff;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+        }
+        .tab.active {
+            border-bottom: 2px solid #4285f4;
+            color: #4285f4;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>颜昔酒的错题本</h1>
+            <div class="student-info">
+                <p>学号: 001</p>
+                <p>生成时间: 2025-03-21 09:23:05</p>
+            </div>
+        </header>
+        
+        <div class="questions-container">
+
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('2025-03-16日作业')">2025-03-16日作业</div>
+                <div class="tab" onclick="switchTab('2025-03-20日考试')">2025-03-20日考试</div>
+            </div>
+
+            <div id="2025-03-16日作业" class="tab-content active">
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 0 - 添加时间: 2025-03-19 09:16:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250320_10.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <p>B,C,D</p>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250320_10_std_answer.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <div class="error-reason">
+                                <h3>错误原因</h3>
+                                <p>不会使用vt图像解题</p>
+                            </div>
+
+                            <div class="knowledge-points">
+                                <h3>知识点:</h3>
+
+                                <span class="knowledge-tag">vt图像</span>
+
+                                <span class="knowledge-tag">完全弹性碰撞</span>
+
+                                <span class="knowledge-tag">动量守恒</span>
+
+                                <span class="knowledge-tag">机械能守恒</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="2025-03-20日考试" class="tab-content">
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 1 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_1.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_1.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_1.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 2 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_2.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_2.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_2.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 3 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_3.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_3.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_3.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 4 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_4.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_4.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_4.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 5 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_5.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_5.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_5.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 6 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_6.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_6.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_6.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 7 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_7.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_7.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_7.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 8 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_8.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_8.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_8.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 9 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_9.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_9.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_9.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 10 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_10.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_10.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_10.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 11 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_11.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_11.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_11.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 12 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_12.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_12.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_12.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 13 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_13.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_13.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_13.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 14 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_14.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_14.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_14.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="exam-info">
+                            题号: 15 - 添加时间: 2025-03-21 09:11
+                        </div>
+                        <div class="review-info">
+                            <div class="review-badge">0</div>
+                            <span>已复习0次 - 上次复习: 尚未复习</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-body">
+                        <div class="question-content">
+                            <h3>题目</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_questions/question_15.jpg" alt="题目图片" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+                        </div>
+                        
+                        <div class="answer-content">
+                            <h3>我的答案</h3>
+
+                            <div class="image-container">
+                                <img src="figs/001_20250321_student_answer/question_15.jpg" alt="我的答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                            <h3>标准答案</h3>
+                            <div class="image-container">
+                                <img src="figs/001_20250321_std_answer/question_15.jpg" alt="标准答案" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 300 200%22%3E%3Crect width%3D%22300%22 height%3D%22200%22 fill%3D%22%23f3f3f3%22%3E%3C%2Frect%3E%3Ctext x%3D%22100%22 y%3D%22100%22 font-family%3D%22Arial%22 font-size%3D%2216%22 fill%3D%22%23999%22%3E图片未找到%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>错题本 - 学习进步的阶梯</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            // 隐藏所有标签内容
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // 取消所有标签的激活状态
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // 激活选中的标签和内容
+            document.getElementById(tabId).classList.add('active');
+            const selectedTab = Array.from(tabs).find(tab => tab.textContent === tabId);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
