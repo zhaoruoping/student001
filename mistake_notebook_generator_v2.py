@@ -374,7 +374,7 @@ def main():
     # 示例用法
     script_dir = os.path.dirname(os.path.abspath(__file__))
     json_file = os.path.join(script_dir, 'data.json')
-    output_html = os.path.join(script_dir, 'mistake_notebook_v2.html')
+    output_html = os.path.join(script_dir, 'index.html')
     
     # 如果错题本JSON文件不存在，创建示例JSON
     if not os.path.exists(json_file):
